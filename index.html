@@ -1032,7 +1032,7 @@ setup.cards = [
   ["NDS-Admitted", "Non-Degree Seeking, Admitted. The status for foundational learners before they matriculate."],
   ["Foundational vs Regular Push", "Foundational: TCE stays the same; move the folder and rename the AER. Regular push: update the start date on all documents, move the folder, rename the TCE and AER, and re-check recency and the LPN license."],
   ["50% Rule", "At least 50% of a program's total credits must be completed at the College. LPNs in BSN or LPN to ASN: at least 50% of nursing core coursework."],
-  ["Credentialing Deadline", "All requirements are due 45 days before the semester. Background check and drug screen: within 120, but no later than 45, days before the first SOFE semester."]
+  ["Credentialing & EL Courses", "After the credentialing deadline, no EL courses go on the PP, unless the credentialing function confirms the learner is cleared. Ask in the Credential Questions chat in Teams. Check for re-entries and pushes; for new learners, only if the learner or Admissions says they're credentialed."]
 ];
 
 
@@ -1065,7 +1065,7 @@ setup.openGuide = function (program) {
     &lt;li&gt;Program breakdowns — BSN, LPN to ASN, PN and RN to BSN&lt;/li&gt;
     &lt;li&gt;LPN credits — what&#39;s automatic, what&#39;s earned by MDC and HESI, and how to label it&lt;/li&gt;
     &lt;li&gt;Foundational learners and TCE/PP pushes&lt;/li&gt;
-    &lt;li&gt;Credentialing deadlines that affect the plan&lt;/li&gt;
+    &lt;li&gt;Credentialing — when EL courses can go on the plan&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class=&quot;panel&quot;&gt;
@@ -1079,7 +1079,7 @@ setup.openGuide = function (program) {
     &lt;li&gt;&lt;strong&gt;LPN to ASN&lt;/strong&gt; — Block credits and the MDC&lt;/li&gt;
     &lt;li&gt;&lt;strong&gt;The Foundational Learner&lt;/strong&gt; — ENG90 and MAT90&lt;/li&gt;
     &lt;li&gt;&lt;strong&gt;The Semester Push&lt;/strong&gt; — TCE/PP push&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Credentialing Check&lt;/strong&gt; — Deadlines&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Credentialing Check&lt;/strong&gt; — EL courses after the deadline&lt;/li&gt;
   &lt;/ol&gt;
   &lt;p&gt;You earn a point for every question you answer correctly on the first try.&lt;/p&gt;
 &lt;/div&gt;&lt;div style=&quot;margin-top: 20px;&quot;&gt;
@@ -2429,12 +2429,12 @@ setup.openGuide = function (program) {
 &lt;/div&gt;
 
 &lt;div class=&quot;panel&quot;&gt;
-  &lt;h3&gt;Credentialing&lt;/h3&gt;
+  &lt;h3&gt;Credentialing &amp;amp; EL Courses&lt;/h3&gt;
   &lt;ul&gt;
-    &lt;li&gt;All requirements: no later than 45 days before the semester.&lt;/li&gt;
-    &lt;li&gt;Background check and 10-panel drug screen: within 120, but no later than 45, days before the first SOFE semester.&lt;/li&gt;
-    &lt;li&gt;AHA BLS at the healthcare provider level, with an in-person component.&lt;/li&gt;
-    &lt;li&gt;EL courses are blue on the PP. Credentials are due 45 days before the first EL course (excluding BSN206).&lt;/li&gt;
+    &lt;li&gt;After the credentialing deadline (new learners, or the secondary deadline for re-entries and pushes), no EL courses go on the PP. Your manager announces when each deadline passes.&lt;/li&gt;
+    &lt;li&gt;Exception: the credentialing function confirms the learner is cleared for that EL course. Ask in the &lt;strong&gt;Credential Questions chat in Teams&lt;/strong&gt;.&lt;/li&gt;
+    &lt;li&gt;Check for re-entries and pushes. New learners: only if the learner or Admissions says they&#39;re credentialed.&lt;/li&gt;
+    &lt;li&gt;BSN206 is blue on the PP but doesn&#39;t require credentialing.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 
@@ -2514,7 +2514,7 @@ setup.openGuide = function (program) {
       &lt;li&gt;&lt;strong&gt;LPN:&lt;/strong&gt; verify the license. BSN206 and BSN225 are automatic; the MDC goes on the NTCE. A license expiring before the start date means a schedule hold.&lt;/li&gt;
       &lt;li&gt;&lt;strong&gt;Foundational:&lt;/strong&gt; Semester 0, next-semester start date, ENG95, even/odd sections, NDS-Admitted. The TCE stays the same.&lt;/li&gt;
       &lt;li&gt;&lt;strong&gt;Regular push:&lt;/strong&gt; update all documents, move the folder, rename, and re-check recency and the LPN license.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Credentialing:&lt;/strong&gt; 45 days before the semester; background check and drug screen within the 120/45 window.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Credentialing:&lt;/strong&gt; after the deadline, no EL courses on the PP unless the credentialing function confirms the learner is cleared. Check in the Credential Questions chat.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/div&gt;
 
@@ -2584,6 +2584,7 @@ setup.openGuide = function (program) {
     &lt;li&gt;&lt;div&gt;&lt;strong&gt;Move the Folder and Rename Documents&lt;/strong&gt;&lt;span&gt;Move the learner&#39;s OneDrive/SharePoint folder to the semester they&#39;re pushing to, and rename the documents (TCE and AER) to match that semester.&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
     &lt;li&gt;&lt;div&gt;&lt;strong&gt;Check Recency&lt;/strong&gt;&lt;span&gt;Verify all recency dates on the TCE. Any course now out of recency is removed from the transfer credits and scheduled back into the PP.&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
     &lt;li&gt;&lt;div&gt;&lt;strong&gt;Check the LPN License&lt;/strong&gt;&lt;span&gt;If the learner is an LPN, verify the license expiration against the new start date. Place a schedule hold if it expires before then.&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;div&gt;&lt;strong&gt;Check Credentialing (if needed)&lt;/strong&gt;&lt;span&gt;If the new semester includes EL courses and the credentialing deadline has passed, ask the Credential Questions chat in Teams whether the learner is cleared for those courses.&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
     &lt;li&gt;&lt;div&gt;&lt;strong&gt;Review&lt;/strong&gt;&lt;span&gt;Confirm both documents show the correct semester, prerequisites are met, and credit loads are right for full- or part-time.&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
@@ -2608,62 +2609,49 @@ setup.openGuide = function (program) {
   [[Start Scenario 7-&gt;S7_Intro]]
   [[Back to Home-&gt;Welcome]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="99" name="Credentialing_Brief" tags="" position="1475,100" size="100,100">&lt;div class=&quot;brief-hero&quot;&gt;
-  &lt;div class=&quot;brief-badge&quot;&gt;Section 5 of 5 · Credentialing&lt;/div&gt;
-  &lt;h1&gt;Learner Credentialing&lt;/h1&gt;
-  &lt;p&gt;Credentialing keeps learners eligible for Supervised On-Ground Field Experiences (SOFE). The deadlines matter when you build a plan.&lt;/p&gt;
+  &lt;div class=&quot;brief-badge&quot;&gt;Section 5 of 5 · Credentialing &amp;amp; EL Courses&lt;/div&gt;
+  &lt;h1&gt;Credentialing &amp;amp; EL Courses&lt;/h1&gt;
+  &lt;p&gt;Registrars don&#39;t manage credentialing, but it decides whether EL courses can go on a learner&#39;s Program Plan.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;panel&quot;&gt;
-  &lt;h3&gt;What is Credentialing?&lt;/h3&gt;
-  &lt;p&gt;Credentialing means staying compliant with background checks, drug screening, immunizations, trainings and other requirements set by the College and by the DFC and IP sites assigned to the learner. Requirements are posted in the third-party vendor&#39;s online portal, and learners are responsible for all associated fees.&lt;/p&gt;
+  &lt;h3&gt;Why It Matters for the PP&lt;/h3&gt;
+  &lt;p&gt;EL (Experiential Learning) courses are highlighted &lt;strong&gt;blue&lt;/strong&gt; on the PP. A learner has to be credentialed before they can take them, so credentialing deadlines decide whether you can schedule those courses.&lt;/p&gt;
+  &lt;div class=&quot;highlight-rule&quot;&gt;&lt;strong&gt;BSN206 is the exception.&lt;/strong&gt; It&#39;s blue on the PP, but it doesn&#39;t require credentialing. Credentialing applies to EL courses like BSN225, BSN246, BSN266 and beyond.&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;panel&quot;&gt;
-  &lt;h3&gt;Deadlines&lt;/h3&gt;
+  &lt;h3&gt;Two Deadlines&lt;/h3&gt;
   &lt;div class=&quot;rule-grid&quot;&gt;
-    &lt;div class=&quot;rule-card&quot;&gt;&lt;span class=&quot;rule-icon&quot;&gt;📅&lt;/span&gt;&lt;h4&gt;All Requirements&lt;/h4&gt;&lt;p&gt;Must be completed no later than 45 calendar days before the first day of the semester.&lt;/p&gt;&lt;/div&gt;
-    &lt;div class=&quot;rule-card&quot;&gt;&lt;span class=&quot;rule-icon&quot;&gt;🔎&lt;/span&gt;&lt;h4&gt;Background Check &amp;amp; Drug Screen&lt;/h4&gt;&lt;p&gt;Criminal background check and 10-panel drug screen: within 120 days, but no later than 45 days, before the first day of the semester with the learner&#39;s first SOFE course.&lt;/p&gt;&lt;/div&gt;
-    &lt;div class=&quot;rule-card&quot;&gt;&lt;span class=&quot;rule-icon&quot;&gt;❤️&lt;/span&gt;&lt;h4&gt;BLS&lt;/h4&gt;&lt;p&gt;American Heart Association BLS (CPR and AED) at the healthcare provider level, with an in-person component. Online-only is NOT accepted.&lt;/p&gt;&lt;/div&gt;
-    &lt;div class=&quot;rule-card&quot;&gt;&lt;span class=&quot;rule-icon&quot;&gt;🏥&lt;/span&gt;&lt;h4&gt;Health Insurance&lt;/h4&gt;&lt;p&gt;Required for all prelicensure learners. Without it, learners may be denied access to clinical facilities.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;rule-card&quot;&gt;&lt;span class=&quot;rule-icon&quot;&gt;🆕&lt;/span&gt;&lt;h4&gt;New Learners&lt;/h4&gt;&lt;p&gt;Once the new-learner credentialing deadline passes, no EL courses can be scheduled on the PP for that semester.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;rule-card&quot;&gt;&lt;span class=&quot;rule-icon&quot;&gt;🔁&lt;/span&gt;&lt;h4&gt;Continuing Learners&lt;/h4&gt;&lt;p&gt;Re-entries and pushes have a secondary deadline. Once it passes, no EL courses can be scheduled on the PP for that semester.&lt;/p&gt;&lt;/div&gt;
   &lt;/div&gt;
+  &lt;div class=&quot;note&quot; style=&quot;margin-top:10px;&quot;&gt;You don&#39;t need to track the dates yourself. Your manager lets the team know when each deadline passes.&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;panel&quot;&gt;
-  &lt;h3&gt;The 120/45 Window — An Example&lt;/h3&gt;
-  &lt;p&gt;For a semester that starts &lt;strong&gt;January 4, 2027&lt;/strong&gt;:&lt;/p&gt;
+  &lt;h3&gt;The Exception: A Cleared Credential Check&lt;/h3&gt;
+  &lt;p&gt;After a deadline passes, an EL course &lt;strong&gt;can&lt;/strong&gt; still be scheduled if the credentialing function confirms the learner is cleared.&lt;/p&gt;
+  &lt;ol class=&quot;process-steps&quot;&gt;
+    &lt;li&gt;&lt;div&gt;&lt;strong&gt;Ask in the Credential Questions Chat&lt;/strong&gt;&lt;span&gt;In Teams, message the credential support collaborators and ask whether the learner is credentialed for the specific EL course in the semester they&#39;re starting.&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;div&gt;&lt;strong&gt;Cleared&lt;/strong&gt;&lt;span&gt;Schedule the EL course on the PP.&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;div&gt;&lt;strong&gt;Not Cleared&lt;/strong&gt;&lt;span&gt;Leave EL courses out of that semester.&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;panel&quot;&gt;
+  &lt;h3&gt;When to Check&lt;/h3&gt;
   &lt;div class=&quot;table-wrap&quot;&gt;
   &lt;table class=&quot;compare-table&quot;&gt;
-    &lt;tr&gt;&lt;th&gt;Timing&lt;/th&gt;&lt;th&gt;Date&lt;/th&gt;&lt;th&gt;Status&lt;/th&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;More than 120 days before&lt;/td&gt;&lt;td&gt;Before Sept 6, 2026&lt;/td&gt;&lt;td class=&quot;no&quot;&gt;Too early — not valid&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;120 to 45 days before&lt;/td&gt;&lt;td&gt;Sept 6 – Nov 20, 2026&lt;/td&gt;&lt;td class=&quot;yes&quot;&gt;Valid window&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;Fewer than 45 days before&lt;/td&gt;&lt;td&gt;After Nov 20, 2026&lt;/td&gt;&lt;td class=&quot;no&quot;&gt;Too late — past the deadline&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Learner&lt;/th&gt;&lt;th&gt;Check with the credentialing function?&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;strong&gt;Re-entry&lt;/strong&gt;&lt;/td&gt;&lt;td class=&quot;yes&quot;&gt;Yes — especially re-entries, since they may already be credentialed.&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;strong&gt;Push&lt;/strong&gt;&lt;/td&gt;&lt;td class=&quot;yes&quot;&gt;Yes&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;strong&gt;New learner&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Only if the learner emails or Admissions says they&#39;re credentialed. Then double-check with the credentialing function.&lt;/td&gt;&lt;/tr&gt;
   &lt;/table&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;panel&quot;&gt;
-  &lt;h3&gt;Required Immunizations&lt;/h3&gt;
-  &lt;p&gt;TB skin test · Varicella · MMR (measles, mumps, rubella) · Influenza · COVID-19 · Hepatitis B · TdaP (tetanus, diphtheria, pertussis)&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;panel&quot;&gt;
-  &lt;h3&gt;On the Program Plan&lt;/h3&gt;
-  &lt;p&gt;Every PP includes this note in the header, and EL courses are highlighted blue:&lt;/p&gt;
-  &lt;div class=&quot;activity-mock&quot;&gt;
-    &lt;div class=&quot;activity-title&quot;&gt;PP Header&lt;/div&gt;
-    &lt;span class=&quot;highlight-field-blue&quot;&gt;Experiential Learning (EL) courses are highlighted in BLUE. Learners do not have control of the EL schedule or location. Credentials are due to Complio 45 days before the first day of the EL courses (excluding BSN206).&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;highlight-rule&quot;&gt;&lt;strong&gt;Note the exception:&lt;/strong&gt; BSN206 is an EL course, but it&#39;s excluded. Credentials are due 45 days before the first EL course &lt;em&gt;after&lt;/em&gt; BSN206.&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;panel&quot;&gt;
-  &lt;h3&gt;If Requirements Aren&#39;t Met&lt;/h3&gt;
-  &lt;div class=&quot;rule-grid&quot;&gt;
-    &lt;div class=&quot;rule-card&quot;&gt;&lt;span class=&quot;rule-icon&quot;&gt;🏨&lt;/span&gt;&lt;h4&gt;DFC Sites&lt;/h4&gt;&lt;p&gt;Missing a site&#39;s credentialing deadline may result in an absence for the scheduled DFC or a withdrawal from the course.&lt;/p&gt;&lt;/div&gt;
-    &lt;div class=&quot;rule-card&quot;&gt;&lt;span class=&quot;rule-icon&quot;&gt;📋&lt;/span&gt;&lt;h4&gt;IP Sites&lt;/h4&gt;&lt;p&gt;Learners must stop attending IP activities until they&#39;re compliant again. Not compliant by semester end → Incomplete, which can become a failing grade.&lt;/p&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;p style=&quot;margin-top:10px;&quot;&gt;Enrolled learners are classified as non-matriculated until all matriculation requirements are met.&lt;/p&gt;
-&lt;/div&gt;
+&lt;div class=&quot;note&quot;&gt;A learner or Admissions saying &quot;they&#39;re credentialed&quot; is a reason to check, not a confirmation. Only a cleared check from the credentialing function lets you schedule an EL course after the deadline.&lt;/div&gt;
 
 &lt;div style=&quot;margin-top: 20px;&quot;&gt;
   [[Start Scenario 9-&gt;S9_Intro]]
@@ -2996,7 +2984,7 @@ setup.openGuide = function (program) {
   &lt;div class=&quot;step-dot current&quot;&gt;4&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;note&quot;&gt;When you check recency, Hannah&#39;s Microbiology transfer course is now out of recency for Summer 2027.&lt;/div&gt;
+&lt;div class=&quot;note&quot;&gt;When you check recency, Hannah&#39;s Algebra transfer course is now out of recency for Summer 2027.&lt;/div&gt;
 
 &lt;div class=&quot;question-label&quot;&gt;Question 4 of 4&lt;/div&gt;
 &lt;h3&gt;What happens to the course?&lt;/h3&gt;
@@ -3030,11 +3018,11 @@ setup.openGuide = function (program) {
 
 [[Try Again-&gt;S8_Q4]]</tw-passagedata><tw-passagedata pid="132" name="S9_Intro" tags="" position="4000,300" size="100,100">&lt;div class=&quot;case-header&quot;&gt;
   &lt;h2&gt;Scenario 9: Credentialing Check&lt;/h2&gt;
-  &lt;p class=&quot;case-meta&quot;&gt;Credentialing · Deadlines&lt;/p&gt;
+  &lt;p class=&quot;case-meta&quot;&gt;Credentialing · EL Courses on the PP&lt;/p&gt;
   &lt;div class=&quot;case-tags&quot;&gt;
     &lt;span class=&quot;case-tag&quot;&gt;Credentialing&lt;/span&gt;
-    &lt;span class=&quot;case-tag&quot;&gt;SOFE&lt;/span&gt;
-    &lt;span class=&quot;case-tag&quot;&gt;Deadlines&lt;/span&gt;
+    &lt;span class=&quot;case-tag&quot;&gt;EL Courses&lt;/span&gt;
+    &lt;span class=&quot;case-tag&quot;&gt;Re-entry&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3050,22 +3038,23 @@ setup.openGuide = function (program) {
   &lt;div class=&quot;info-row&quot;&gt;
     &lt;div class=&quot;info-chip&quot;&gt;&lt;strong&gt;Learner&lt;/strong&gt;Walker, Chris D.&lt;/div&gt;
     &lt;div class=&quot;info-chip&quot;&gt;&lt;strong&gt;Program&lt;/strong&gt;BSN&lt;/div&gt;
-    &lt;div class=&quot;info-chip&quot;&gt;&lt;strong&gt;First SOFE&lt;/strong&gt;Spring 2027&lt;/div&gt;
-    &lt;div class=&quot;info-chip&quot;&gt;&lt;strong&gt;Semester Starts&lt;/strong&gt;Jan 4, 2027&lt;/div&gt;
+    &lt;div class=&quot;info-chip&quot;&gt;&lt;strong&gt;Status&lt;/strong&gt;Re-entry&lt;/div&gt;
+    &lt;div class=&quot;info-chip&quot;&gt;&lt;strong&gt;Returning&lt;/strong&gt;Spring 2027&lt;/div&gt;
   &lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;&lt;p&gt;– Chris is returning as a re-entry learner&lt;br&gt;– His starting semester includes &lt;strong&gt;BSN246&lt;/strong&gt; (EL course)&lt;br&gt;– Yesterday your manager let the team know the continuing-learner credentialing deadline for Spring 2027 has passed&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;question-label&quot;&gt;Question 1 of 4&lt;/div&gt;
-&lt;h3&gt;What&#39;s the last day Chris can complete all credentialing requirements for Spring 2027?&lt;/h3&gt;
+&lt;h3&gt;The deadline has passed. What do you do about BSN246?&lt;/h3&gt;
 &lt;div class=&quot;answers&quot;&gt;
-  [[December 4, 2026 (30 days prior)-&gt;S9_Q1_Wrong1]]
-  [[November 20, 2026 (45 days prior)-&gt;S9_Q1_Correct]]
-  [[January 4, 2027 (the first day of the semester)-&gt;S9_Q1_Wrong2]]
+  [[Remove BSN246 — the deadline has passed, so no EL courses.-&gt;S9_Q1_Wrong1]]
+  [[Message the Credential Questions chat in Teams and ask whether Chris is credentialed for BSN246 in Spring 2027.-&gt;S9_Q1_Correct]]
+  [[Email Chris and ask whether he&#39;s credentialed.-&gt;S9_Q1_Wrong2]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="133" name="S9_Q1_Wrong1" tags="" position="3875,425" size="100,100">&lt;&lt;set $attempts to $attempts + 1&gt;&gt;
 
 &lt;div class=&quot;incorrect&quot;&gt;
   &lt;h3&gt;Not quite&lt;/h3&gt;
-  &lt;p&gt;The deadline is 45 calendar days before the first day of the semester, not 30.&lt;/p&gt;
+  &lt;p&gt;Not so fast. After the deadline, an EL course can still be scheduled if the credentialing function confirms the learner is cleared. Chris is a re-entry, so check first.&lt;/p&gt;
 &lt;/div&gt;
 
 [[Try Again-&gt;S9_Intro]]</tw-passagedata><tw-passagedata pid="134" name="S9_Q1_Correct" tags="" position="4000,425" size="100,100">&lt;&lt;if $attempts is 0&gt;&gt;&lt;&lt;set $score to $score + 1&gt;&gt;&lt;&lt;/if&gt;&gt;
@@ -3073,19 +3062,19 @@ setup.openGuide = function (program) {
 
 &lt;div class=&quot;correct&quot;&gt;
   &lt;h3&gt;Correct!&lt;/h3&gt;
-  &lt;p&gt;All credentialing requirements must be completed no later than 45 calendar days before the first day of the semester.&lt;/p&gt;
+  &lt;p&gt;Re-entry learners may already be credentialed, so ask the credential support collaborators about the specific EL course in the semester he&#39;s starting.&lt;/p&gt;
 &lt;/div&gt;
 
 [[Continue to Question 2-&gt;S9_Q2]]</tw-passagedata><tw-passagedata pid="135" name="S9_Q1_Wrong2" tags="" position="4125,425" size="100,100">&lt;&lt;set $attempts to $attempts + 1&gt;&gt;
 
 &lt;div class=&quot;incorrect&quot;&gt;
   &lt;h3&gt;Not quite&lt;/h3&gt;
-  &lt;p&gt;In rare cases a SOFE course can be added after the deadline, but enrollment isn&#39;t guaranteed. The deadline is 45 days before the semester.&lt;/p&gt;
+  &lt;p&gt;Credential status comes from the credentialing function, not the learner. Ask in the Credential Questions chat in Teams.&lt;/p&gt;
 &lt;/div&gt;
 
 [[Try Again-&gt;S9_Intro]]</tw-passagedata><tw-passagedata pid="136" name="S9_Q2" tags="" position="4000,550" size="100,100">&lt;div class=&quot;case-header&quot;&gt;
   &lt;h2&gt;Scenario 9: Credentialing Check&lt;/h2&gt;
-  &lt;p class=&quot;case-meta&quot;&gt;Credentialing · Deadlines&lt;/p&gt;
+  &lt;p class=&quot;case-meta&quot;&gt;Credentialing · EL Courses on the PP&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;step-tracker&quot;&gt;
@@ -3095,26 +3084,26 @@ setup.openGuide = function (program) {
   &lt;div class=&quot;step-dot&quot;&gt;4&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;note&quot;&gt;Chris completed his background check on August 15, 2026.&lt;/div&gt;
+&lt;div class=&quot;note&quot;&gt;The credential support collaborators reply: Chris is cleared for BSN246 in Spring 2027.&lt;/div&gt;
 
 &lt;div class=&quot;question-label&quot;&gt;Question 2 of 4&lt;/div&gt;
-&lt;h3&gt;Is his background check valid for Spring 2027?&lt;/h3&gt;
+&lt;h3&gt;What do you do now?&lt;/h3&gt;
 &lt;div class=&quot;answers&quot;&gt;
-  [[Yes — it&#39;s before the 45-day deadline.-&gt;S9_Q2_Wrong1]]
-  [[Yes — background checks don&#39;t expire.-&gt;S9_Q2_Wrong2]]
-  [[No — it&#39;s more than 120 days before the semester. It must be done between Sept 6 and Nov 20, 2026.-&gt;S9_Q2_Correct]]
+  [[Remove BSN246 anyway — the deadline still passed.-&gt;S9_Q2_Wrong1]]
+  [[Wait for your manager to approve it.-&gt;S9_Q2_Wrong2]]
+  [[Keep BSN246 on his PP — he&#39;s cleared for it.-&gt;S9_Q2_Correct]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="137" name="S9_Q2_Wrong1" tags="" position="3875,675" size="100,100">&lt;&lt;set $attempts to $attempts + 1&gt;&gt;
 
 &lt;div class=&quot;incorrect&quot;&gt;
   &lt;h3&gt;Not quite&lt;/h3&gt;
-  &lt;p&gt;Being before the 45-day deadline isn&#39;t enough. It must also be within 120 days of the semester, and August 15 is about 142 days before.&lt;/p&gt;
+  &lt;p&gt;The cleared check is the exception. When the credentialing function confirms he&#39;s cleared, the EL course can stay on the plan.&lt;/p&gt;
 &lt;/div&gt;
 
 [[Try Again-&gt;S9_Q2]]</tw-passagedata><tw-passagedata pid="138" name="S9_Q2_Wrong2" tags="" position="4000,675" size="100,100">&lt;&lt;set $attempts to $attempts + 1&gt;&gt;
 
 &lt;div class=&quot;incorrect&quot;&gt;
   &lt;h3&gt;Not quite&lt;/h3&gt;
-  &lt;p&gt;Timing matters: the check must be within 120, but no later than 45, days before the semester.&lt;/p&gt;
+  &lt;p&gt;You don&#39;t need a separate approval. A cleared check from the credentialing function is what lets you schedule it.&lt;/p&gt;
 &lt;/div&gt;
 
 [[Try Again-&gt;S9_Q2]]</tw-passagedata><tw-passagedata pid="139" name="S9_Q2_Correct" tags="" position="4125,675" size="100,100">&lt;&lt;if $attempts is 0&gt;&gt;&lt;&lt;set $score to $score + 1&gt;&gt;&lt;&lt;/if&gt;&gt;
@@ -3122,12 +3111,12 @@ setup.openGuide = function (program) {
 
 &lt;div class=&quot;correct&quot;&gt;
   &lt;h3&gt;Correct!&lt;/h3&gt;
-  &lt;p&gt;The background check and drug screen must fall within 120 days, but no later than 45 days, before the semester. August 15 is about 142 days before January 4, which is too early.&lt;/p&gt;
+  &lt;p&gt;A cleared check from the credentialing function means the EL course can be scheduled, even after the deadline.&lt;/p&gt;
 &lt;/div&gt;
 
 [[Continue to Question 3-&gt;S9_Q3]]</tw-passagedata><tw-passagedata pid="140" name="S9_Q3" tags="" position="4125,800" size="100,100">&lt;div class=&quot;case-header&quot;&gt;
   &lt;h2&gt;Scenario 9: Credentialing Check&lt;/h2&gt;
-  &lt;p class=&quot;case-meta&quot;&gt;Credentialing · Deadlines&lt;/p&gt;
+  &lt;p class=&quot;case-meta&quot;&gt;Credentialing · EL Courses on the PP&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;step-tracker&quot;&gt;
@@ -3137,19 +3126,19 @@ setup.openGuide = function (program) {
   &lt;div class=&quot;step-dot&quot;&gt;4&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;note&quot;&gt;Chris uploads an online-only BLS certificate.&lt;/div&gt;
+&lt;div class=&quot;note&quot;&gt;Taylor is a new BSN learner starting Spring 2027. Her NTCE gives her BSN206, so BSN225 would normally go in her starting semester. The new-learner credentialing deadline has passed, and no one has said she&#39;s credentialed.&lt;/div&gt;
 
 &lt;div class=&quot;question-label&quot;&gt;Question 3 of 4&lt;/div&gt;
-&lt;h3&gt;Is it accepted?&lt;/h3&gt;
+&lt;h3&gt;What do you do about BSN225?&lt;/h3&gt;
 &lt;div class=&quot;answers&quot;&gt;
-  [[Yes — any BLS certificate works.-&gt;S9_Q3_Wrong1]]
-  [[No — it must be AHA BLS at the healthcare provider level, with an in-person component.-&gt;S9_Q3_Correct]]
-  [[Yes, as long as it includes AED.-&gt;S9_Q3_Wrong2]]
+  [[Leave BSN225 (and any other EL course) out of her starting semester.-&gt;S9_Q3_Correct]]
+  [[Message the Credential Questions chat to check on her.-&gt;S9_Q3_Wrong1]]
+  [[Schedule BSN225 — she has the prereqs.-&gt;S9_Q3_Wrong2]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="141" name="S9_Q3_Wrong1" tags="" position="4000,925" size="100,100">&lt;&lt;set $attempts to $attempts + 1&gt;&gt;
 
 &lt;div class=&quot;incorrect&quot;&gt;
   &lt;h3&gt;Not quite&lt;/h3&gt;
-  &lt;p&gt;It must be American Heart Association BLS at the healthcare provider level, and online-only isn&#39;t accepted.&lt;/p&gt;
+  &lt;p&gt;For new learners, you don&#39;t check unless the learner emails or Admissions says they&#39;re credentialed. Past the deadline, EL courses come off the plan.&lt;/p&gt;
 &lt;/div&gt;
 
 [[Try Again-&gt;S9_Q3]]</tw-passagedata><tw-passagedata pid="142" name="S9_Q3_Correct" tags="" position="4125,925" size="100,100">&lt;&lt;if $attempts is 0&gt;&gt;&lt;&lt;set $score to $score + 1&gt;&gt;&lt;&lt;/if&gt;&gt;
@@ -3157,19 +3146,19 @@ setup.openGuide = function (program) {
 
 &lt;div class=&quot;correct&quot;&gt;
   &lt;h3&gt;Correct!&lt;/h3&gt;
-  &lt;p&gt;Online-only certifications are not accepted. It must be American Heart Association BLS at the healthcare provider level, with an in-person component.&lt;/p&gt;
+  &lt;p&gt;After the new-learner deadline, no EL courses go on the PP. For new learners, you only check with the credentialing function if the learner or Admissions says they&#39;re credentialed.&lt;/p&gt;
 &lt;/div&gt;
 
 [[Continue to Question 4-&gt;S9_Q4]]</tw-passagedata><tw-passagedata pid="143" name="S9_Q3_Wrong2" tags="" position="4250,925" size="100,100">&lt;&lt;set $attempts to $attempts + 1&gt;&gt;
 
 &lt;div class=&quot;incorrect&quot;&gt;
   &lt;h3&gt;Not quite&lt;/h3&gt;
-  &lt;p&gt;Including AED isn&#39;t enough. It still needs an in-person component.&lt;/p&gt;
+  &lt;p&gt;Prereqs aren&#39;t the issue here. After the new-learner deadline, no EL courses can be scheduled.&lt;/p&gt;
 &lt;/div&gt;
 
 [[Try Again-&gt;S9_Q3]]</tw-passagedata><tw-passagedata pid="144" name="S9_Q4" tags="" position="4125,1050" size="100,100">&lt;div class=&quot;case-header&quot;&gt;
   &lt;h2&gt;Scenario 9: Credentialing Check&lt;/h2&gt;
-  &lt;p class=&quot;case-meta&quot;&gt;Credentialing · Deadlines&lt;/p&gt;
+  &lt;p class=&quot;case-meta&quot;&gt;Credentialing · EL Courses on the PP&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;step-tracker&quot;&gt;
@@ -3179,19 +3168,19 @@ setup.openGuide = function (program) {
   &lt;div class=&quot;step-dot current&quot;&gt;4&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;note&quot;&gt;A different BSN learner&#39;s first semester with EL courses includes BSN206, which is highlighted blue on the PP.&lt;/div&gt;
+&lt;div class=&quot;note&quot;&gt;Two days later, Admissions emails you: Taylor says she&#39;s already credentialed.&lt;/div&gt;
 
 &lt;div class=&quot;question-label&quot;&gt;Question 4 of 4&lt;/div&gt;
-&lt;h3&gt;Are this learner&#39;s credentials due 45 days before the semester with BSN206?&lt;/h3&gt;
+&lt;h3&gt;What now?&lt;/h3&gt;
 &lt;div class=&quot;answers&quot;&gt;
-  [[Yes — BSN206 is highlighted blue, so it&#39;s an EL course.-&gt;S9_Q4_Wrong1]]
-  [[No — BSN206 is excluded. Credentials are due 45 days before the first EL course after BSN206.-&gt;S9_Q4_Correct]]
-  [[No — credentials are only due before the final semester.-&gt;S9_Q4_Wrong2]]
+  [[Add BSN225 back — Admissions confirmed it.-&gt;S9_Q4_Wrong1]]
+  [[Nothing — new learners are never checked.-&gt;S9_Q4_Wrong2]]
+  [[Double-check in the Credential Questions chat, and schedule BSN225 only if she comes back cleared.-&gt;S9_Q4_Correct]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="145" name="S9_Q4_Wrong1" tags="" position="4000,1175" size="100,100">&lt;&lt;set $attempts to $attempts + 1&gt;&gt;
 
 &lt;div class=&quot;incorrect&quot;&gt;
   &lt;h3&gt;Not quite&lt;/h3&gt;
-  &lt;p&gt;BSN206 is an EL course, but it&#39;s the exception. Credentials are due 45 days before the first EL course other than BSN206.&lt;/p&gt;
+  &lt;p&gt;Admissions passing along what Taylor said is a reason to check, not a confirmation. Double-check with the credentialing function first.&lt;/p&gt;
 &lt;/div&gt;
 
 [[Try Again-&gt;S9_Q4]]</tw-passagedata><tw-passagedata pid="146" name="S9_Q4_Correct" tags="" position="4125,1175" size="100,100">&lt;&lt;if $attempts is 0&gt;&gt;&lt;&lt;set $score to $score + 1&gt;&gt;&lt;&lt;/if&gt;&gt;
@@ -3199,7 +3188,7 @@ setup.openGuide = function (program) {
 
 &lt;div class=&quot;correct&quot;&gt;
   &lt;h3&gt;Correct!&lt;/h3&gt;
-  &lt;p&gt;The PP header says it: credentials are due to Complio 45 days before the first day of the EL courses, excluding BSN206.&lt;/p&gt;
+  &lt;p&gt;When the learner or Admissions says a new learner is credentialed, double-check with the credentialing function. Schedule the EL course only if she&#39;s cleared.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;note&quot;&gt;Scenario 9 complete! You&#39;ve finished every scenario.&lt;/div&gt;
@@ -3208,7 +3197,7 @@ setup.openGuide = function (program) {
 
 &lt;div class=&quot;incorrect&quot;&gt;
   &lt;h3&gt;Not quite&lt;/h3&gt;
-  &lt;p&gt;Credentials are due 45 days before the first EL course, excluding BSN206, not before the final semester.&lt;/p&gt;
+  &lt;p&gt;When the learner or Admissions says a new learner is credentialed, you double-check with the credentialing function.&lt;/p&gt;
 &lt;/div&gt;
 
 [[Try Again-&gt;S9_Q4]]</tw-passagedata><tw-passagedata pid="148" name="Record Completion" tags="" position="725,100" size="100,100">&lt;div class=&quot;case-header&quot;&gt;
